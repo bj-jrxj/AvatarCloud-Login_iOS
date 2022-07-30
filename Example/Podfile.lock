@@ -1,0 +1,16 @@
+PODS:
+  - AvatarCloud_Login (1.0.0)
+
+DEPENDENCIES:
+  - AvatarCloud_Login (from `../`)
+
+EXTERNAL SOURCES:
+  AvatarCloud_Login:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AvatarCloud_Login: d7b75d7b7949439e628a3b2db4f4da7bbb86bdb3
+
+PODFILE CHECKSUM: bc5be9edb133d18f59eaf117fd00d71db6abb66c
+
+COCOAPODS: 1.11.3
