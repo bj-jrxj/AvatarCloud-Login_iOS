@@ -23,7 +23,7 @@
 * **具体内测申请流程请访问官网: https://fc.faceface2.com**
 
 |功能模块|平台|下载地址|
-|-|-------:|:------:|
+|-|-------:|:------|
 |云头像|iOS<br>Adnroid|https://github.com/bj-jrxj/AvatarCloud_iOS<br>https://github.com/bj-jrxj/AvatarCloud_Android|
 |云头像+一键登录|iOS|https://github.com/bj-jrxj/AvatarCloud-Login_iOS.git|
 
