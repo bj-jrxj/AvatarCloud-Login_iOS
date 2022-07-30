@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'AvatarCloud_Login_Example' do
+  pod 'AvatarCloud_Login', :path => '../'
+
+  target 'AvatarCloud_Login_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
