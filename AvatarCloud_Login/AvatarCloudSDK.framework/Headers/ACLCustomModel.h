@@ -46,7 +46,7 @@ typedef CGRect(^ACLBuildFrameBlock)(CGSize screenSize, CGSize superViewSize, CGR
  */
 @property (nonatomic, assign) CGSize contentViewSize;
 
-/**0默认全屏，1弹窗（屏幕居中），2底部弹窗*/
+/**customView 展现形式。0默认全屏，1弹窗（屏幕居中），2底部弹窗*/
 @property (nonatomic, assign) ACLContentViewType contentViewType;
 
 /** contentViewType == 1 时有效*/

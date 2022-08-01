@@ -19,6 +19,9 @@
     "ios": "9.0"
   },
   "source_files": "AvatarCloud_Login/AvatarCloudSDK.framework/Headers/*",
-  "vendored_frameworks": "AvatarCloud_Login/AvatarCloudSDK.framework",
-  "resources": "AvatarCloud_Login/AvatarCloudSDK.framework/AvatarCloudSDK.bundle"
+  "vendored_frameworks": [
+    "AvatarCloud_Login/AvatarCloudSDK.framework"
+  ],
+  "resources": "AvatarCloud_Login/AvatarCloudSDK.framework/AvatarCloudSDK.bundle",
+  "frameworks": "Network"
 }

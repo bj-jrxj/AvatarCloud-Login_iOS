@@ -19,7 +19,9 @@ Pod::Spec.new do |s|
   
 
   s.source_files = 'AvatarCloud_Login/AvatarCloudSDK.framework/Headers/*'
-  s.vendored_frameworks = "AvatarCloud_Login/AvatarCloudSDK.framework"
+  s.vendored_frameworks = [
+                            "AvatarCloud_Login/AvatarCloudSDK.framework",
+                          ]
   s.resources = 'AvatarCloud_Login/AvatarCloudSDK.framework/AvatarCloudSDK.bundle'
-  
+  s.framework = 'Network'
 end

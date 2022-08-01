@@ -7,11 +7,11 @@
 //
 
 @import UIKit;
-#import "YAppDelegate.h"
+#import "ACAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([YAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([ACAppDelegate class]));
     }
 }

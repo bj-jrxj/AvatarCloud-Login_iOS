@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AvatarCloud_Login: d7b75d7b7949439e628a3b2db4f4da7bbb86bdb3
+  AvatarCloud_Login: c673d30cc5b060900c796e085e68bb550bd0a0be
 
 PODFILE CHECKSUM: bc5be9edb133d18f59eaf117fd00d71db6abb66c
 
