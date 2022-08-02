@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NS_ENUM(NSUInteger, ACLPresentationDirection){
+typedef NS_ENUM(NSUInteger, ACLPresentationDirection) {
     ACLPresentationDirectionBottom = 0,
     ACLPresentationDirectionRight,
     ACLPresentationDirectionTop,
@@ -76,9 +76,9 @@ typedef CGRect(^ACLBuildFrameBlock)(CGSize screenSize, CGSize superViewSize, CGR
 
 #pragma mark- 返回按钮
 /** 导航栏返回图片 */
-@property (nonatomic, strong) UIImage *navBackImage;
+@property (nonatomic, strong) UIImage *backBtnImage;
 /** 是否隐藏授权页返回按钮，默认不隐藏 */
-@property (nonatomic, assign) BOOL hideNavBackBtn;
+@property (nonatomic, assign) BOOL backBtnIsHidden;
 /** 构建返回按钮的frame，view布局或布局发生变化时调用，不实现则按默认处理 */
 @property (nonatomic, copy) ACLBuildFrameBlock backBtnFrameBlock;
 

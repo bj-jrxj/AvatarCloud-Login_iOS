@@ -198,8 +198,8 @@ presentDirection | ACLPresentationDirection | 授权页面推出动画效果
 isPresentAnimated | BOOL | 授权页面是否需要弹出动画，默认为YES
 contentViewType | ACLContentViewType | customView 展现形式。0默认全屏，1弹窗（屏幕居中），2底部弹窗
 返回按钮  
-navBackImage | UIImage | 导航栏返回图片 
-hideNavBackBtn | BOOL | 是否隐藏授权页返回按钮，默认不隐藏
+backBtnImage | UIImage | 导航栏返回图片 
+backBtnIsHidden | BOOL | 是否隐藏授权页返回按钮，默认不隐藏
 backBtnFrameBlock | ACLBuildFrameBlock | return frame; 构建返回按钮的的frame
 logo
 logoImage | UIImage | 设置一张图片
