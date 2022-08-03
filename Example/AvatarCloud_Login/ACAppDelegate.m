@@ -14,9 +14,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    [AvatarCloudSDKManager initWithClient_id:@"client_id" client_secret:@"client_secret" complete:^(NSDictionary * _Nonnull resultDic) {
-        
+    [AvatarCloudSDKManager initWithClient_id:@"300012196877" client_secret:@"324591C802A29B5B4DD6BCD4D33EA632" complete:^(NSDictionary * _Nonnull resultDic) {
+        NSLog(@"AvatarSDKInfo %@", resultDic);
     }];
+    
+//    [AvatarCloudSDKManager initWithClient_id:@"client_id" client_secret:@"client_secret" complete:^(NSDictionary * _Nonnull resultDic) {
+//        
+//    }];
     return YES;
 }
 
