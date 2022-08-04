@@ -15,6 +15,10 @@ typedef NSString* ACLoginCode;
 
 //成功
 static NSString* const ACLoginCodeSuccess                = @"103000";
+//包签名错误
+static NSString* const ACLoginCodeBundleIdError          = @"103102";
+//appid 不存在
+static NSString* const ACLoginCodeAppIdError             = @"103119";
 //数据解析异常
 static NSString* const ACLoginCodeProcessException       = @"200021";
 //无网络

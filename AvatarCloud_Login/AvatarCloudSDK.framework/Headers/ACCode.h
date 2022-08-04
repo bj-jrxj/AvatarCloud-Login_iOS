@@ -22,6 +22,6 @@ typedef NS_ENUM (NSUInteger, ACCodeType) {
 
 
 /// 成功通用回调
-typedef void (^ACBlockSuccess)(void);
+typedef void (^ACBlockSuccess)(id result);
 /// 失败通用回调
 typedef void (^ACBlockError)(ACCodeType codeType, NSString *desc);

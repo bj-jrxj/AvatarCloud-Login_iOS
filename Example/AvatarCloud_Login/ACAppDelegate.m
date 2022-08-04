@@ -5,7 +5,7 @@
 //  Created by cyssan1991 on 07/30/2022.
 //  Copyright (c) 2022 cyssan1991. All rights reserved.
 //
-
+ 
 #import "ACAppDelegate.h"
 #import <AvatarCloudSDK/AvatarCloudSDK.h>
 
@@ -16,7 +16,7 @@
     // Override point for customization after application launch.
     
     [AvatarCloudSDKManager initWithClient_id:@"client_id" client_secret:@"client_secret" complete:^(NSDictionary * _Nonnull resultDic) {
-
+        NSLog(@"sdk init - %@", resultDic);
     }];
     
     return YES;

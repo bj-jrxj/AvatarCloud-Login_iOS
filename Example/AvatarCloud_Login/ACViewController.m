@@ -101,7 +101,6 @@
     model = self.modelWindow;
     UIView *view = [[UIView alloc] initWithFrame:self.view.bounds];
     view.backgroundColor = [UIColor colorWithWhite:0. alpha:0.2];
-    [self.view addSubview:view];
     self.bgView = view;
 #endif
     
@@ -109,12 +108,16 @@
     [[ACLoginManager sharedInstance] getAuthorizationWithController:self model:model complete:^(id  _Nonnull sender) {
         NSLog(@"custom login %@", sender);
         NSString *code = [sender objectForKey:@"resultCode"];
-        if ([ACLoginCodeSuccess isEqualToString:code]) {
+        if ([ACLoginControllerPresentSuccess isEqualToString:code]) {
+            [self.view addSubview:self.bgView];
+        } else if ([ACLoginCodeSuccess isEqualToString:code]) {
             [weakSelf authLoginSuccess];
         } else if ([ACLoginCodeClickCancel isEqualToString:code]) {
             [weakSelf authLoginExit];
         } else if ([ACLoginCodeClickChangeBtn isEqualToString:code]) {
             [weakSelf authLoginChange];
+        } else {
+            [weakSelf removeBgView];
         }
     }];
 }
